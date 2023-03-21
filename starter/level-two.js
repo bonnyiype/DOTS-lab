@@ -8,8 +8,8 @@ const balls = document.querySelectorAll('.js-ball');
 const levelWinner = document.querySelector('.level-winner');
 let score = 0;
 
-for (let i = 0; i < balls.length; i++) {
-  balls[i].addEventListener('click', function() {
+for (let ball of balls) {
+  ball.addEventListener('click',() => {
     score += 10;
     scoreDisplay.innerText = `Score: ${score}`;
 

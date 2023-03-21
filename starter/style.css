@@ -1,12 +1,13 @@
 /*---
  * Elements
  --- */
-body {
+ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Inconsolata', monospace;
-  background-color: #111;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(45deg, #F1B308, #f3eab640);
+  color: #333;
 }
 
 main {
@@ -18,11 +19,11 @@ h2,
 h3,
 h4 {
   font-family: 'Play', sans-serif;
-  color: #fff;
+  color:rgba(0, 0, 0, 0.873);
 }
 
 p {
-  color: #fff;
+  color: balc#fff;
 }
 
 a {
@@ -102,9 +103,18 @@ a {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.25rem;
-  animation: 2s linear infinite blink;
+  background-color: #F1B308;
+  color: #ffffffdd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
+.button:hover {
+  background-color: #F3EAB6;
+  color: #333;
+}
 /*---
  * Modules
  --- */
@@ -116,7 +126,8 @@ a {
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #c4f3b6;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   animation: 7s linear infinite backAndForth;
   cursor: pointer;
 }
@@ -136,10 +147,6 @@ a {
   flex-wrap: nowrap;
 }
 
-.level-header__title,
-.level-header__score {
-  /* width: 40%; */
-}
 
 .level-header h2,
 .level-header h4 {
@@ -160,7 +167,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 4rem;
-  background-color: #111;
+  background-color:yellowgreen;
   text-align: center;
   z-index: 10;
   opacity: 0;
